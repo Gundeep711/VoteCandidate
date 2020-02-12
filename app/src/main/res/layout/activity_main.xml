@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="30dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vote Result"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:padding="30dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/candidateText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Candidate 1 : "
+            android:padding="10dp"/>
+        <TextView
+            android:id="@+id/countText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="count 0"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/candidateText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Candidate 2 : "
+            android:padding="10dp"/>
+        <TextView
+            android:id="@+id/countText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="count 0"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/candidateText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Candidate 3 : "
+            android:padding="10dp"/>
+        <TextView
+            android:id="@+id/countText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="count 0"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vote"
+        android:layout_margin="20dp"
+        android:onClick="nextActivity"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtDisplay"/>
+
+</LinearLayout>

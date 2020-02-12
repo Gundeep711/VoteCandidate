@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="30dp"
+    tools:context=".chooseCandidate">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please vote your candidate"
+        android:textStyle="bold"
+        android:padding="20dp"
+        android:gravity="center_horizontal"/>
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your Name :"
+        android:padding="10dp"/>
+
+    <EditText
+        android:inputType="number"
+        android:id="@+id/editTextID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your ID : "
+        android:padding="10dp"/>
+    <Spinner
+        android:id="@+id/spinnerArray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/candidatesArray"
+        android:padding="10dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+        <ToggleButton
+            android:id="@+id/tb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vote"
+            android:onClick="choose" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/choose1"/>
+
+
+
+
+
+</LinearLayout>
