@@ -44,7 +44,10 @@
         <ToggleButton
             android:id="@+id/tb1"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:textOn="Accept"
+            android:textOff="Denied"
+            android:background="#065"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

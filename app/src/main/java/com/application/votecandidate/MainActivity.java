@@ -49,23 +49,28 @@ public class MainActivity extends AppCompatActivity {
             if(resultCode == this.RESULT_OK){
                 String result=data.getStringExtra("result");
                 int uniqueID = data.getIntExtra("uniqueID",0);
-                if(txMain.equalsIgnoreCase("Candidate 1")){
+                if(txMain.equalsIgnoreCase("Candidate 1") && !IDs.contains(uniqueID)){
                     v1++;
                     txtView1.setText(v1+ " Votes");
                     IDs.add(uniqueID);
                 }
 
-                else if(txMain.equalsIgnoreCase("Candidate 2")){
+                else if(txMain.equalsIgnoreCase("Candidate 2")&& !IDs.contains(uniqueID)){
                     v2++;
                     txtView2.setText(v2+ " Votes");
                     IDs.add(uniqueID);
                 }
-                else if(txMain.equalsIgnoreCase("Candidate 3"))
+                else if(txMain.equalsIgnoreCase("Candidate 3")&& !IDs.contains(uniqueID))
                 {
                     v3++;
                     txtView3.setText(v3+ " Votes");
                     IDs.add(uniqueID);
                 }
+
+                else{
+                    tx.setText("Please enter the unique ID");
+                }
+
 
             }
             if (resultCode == Activity.RESULT_CANCELED) {
